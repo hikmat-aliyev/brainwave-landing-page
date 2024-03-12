@@ -1,4 +1,5 @@
-import { background } from "../../assets";
+import { background } from "../assets";
+import { navigation } from "../constants/constants";
 
 export const Rings = () => {
   return (
@@ -30,8 +31,8 @@ export const BackgroundCircles = () => {
 
 export const HamburgerMenu = () => {
   return (
-    <div className="absolute inset-0 pointer-events-none lg:hidden">
-      <div className="absolute inset-0 opacity-[.03]">
+    <div className="absolute inset-0 pointer-events-none lg:hidden  mt-28">
+      <div className="absolute  opacity-[.03]">
         <img
           className="w-full h-full object-cover"
           src={background}
@@ -39,6 +40,18 @@ export const HamburgerMenu = () => {
           height={953}
           alt="Background"
         />
+      </div>
+      <div className="flex flex-col items-center justify-center gap-10">
+        {navigation.map((item) => (
+          <a
+            key={item.id}
+            href={item.url}
+            className={`font-code lg:text-xs uppercase text-n-3
+             transition-colors hover:text-n-1 font-semibold lg:hidden px-10`}
+          >
+            {item.title}
+          </a>
+        ))}
       </div>
 
       <Rings />

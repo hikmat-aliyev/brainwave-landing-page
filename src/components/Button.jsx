@@ -1,12 +1,15 @@
-function Button({ className, href, onclick, children, px, white }) {
-  const buttonClasses = ` bg-gradient-to-r from-blue-500 to-purple-500
-  text-white rounded p-0.5 font-extralight ${className || ""}`;
+function Button({ className, spanClass, href, onclick, children, px, white }) {
+  const buttonClasses = ` bg-gradient-to-r from-blue-300 to-purple-400
+  text-white rounded p-0.5 font-extralight  rounded-tl-5 rounded-tr-4 
+  rounded-bl-5 rounded-br-5 font-code uppercase font-bold text-xs text-n-3
+  transition-colors hover:text-colors-1  ${className || ""}`;
+
+  const spanClasses = `flex w-full bg-n-8 rounded p-2 px-5 text-n-1 transition-colors 
+  hover:text-color-1 tracking-widest ${spanClass || ""}`;
 
   return (
-    <button class={buttonClasses}>
-      <span class="flex w-full bg-n-8 text-white rounded p-2 px-5">
-        {children}
-      </span>
+    <button className={buttonClasses}>
+      <span className={spanClasses}>{children}</span>
     </button>
   );
 }
