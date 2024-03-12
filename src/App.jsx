@@ -1,9 +1,14 @@
 import Navbar from "./components/Navbar";
+import ButtonGradient from "./assets/svg/ButtonGradient";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <div>
+        <Navbar />
+      </div>
+
+      <ButtonGradient />
     </>
   );
 }
