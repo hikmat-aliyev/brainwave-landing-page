@@ -1,15 +1,12 @@
 import Navbar from "./components/Navbar";
-import ButtonGradient from "./assets/svg/ButtonGradient";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-    <>
-      <div>
-        <Navbar />
-      </div>
-
-      <ButtonGradient />
-    </>
+    <div className="flex flex-col p-2 lg:p-10">
+      <Navbar />
+      <Hero />
+    </div>
   );
 }
 

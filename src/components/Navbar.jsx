@@ -10,8 +10,9 @@ function Navbar() {
 
   return (
     <div
-      className="fixed top-o left-0 w-full flex justify-between 
-                items-center px-4 lg:px-8 opacity-0.5 h-24 border-b border-n-6 "
+      className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
+        openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
+      } flex justify-between items-center lg:px-10 px-4 h-20`}
     >
       <div>
         <img src={brainwave} alt="brain-wave-logo" width={190} />
@@ -49,7 +50,7 @@ function Navbar() {
         <Button
           href="#hey"
           className={"lg:hidden p-0.5"}
-          spanClass={"py-3 px-2.5"}
+          spanClass={"py-2.5 px-1.5"}
         >
           <MenuSvg openNavigation={openNavigation} />
         </Button>

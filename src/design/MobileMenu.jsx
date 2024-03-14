@@ -31,8 +31,8 @@ export const BackgroundCircles = () => {
 
 export const HamburgerMenu = () => {
   return (
-    <div className="absolute inset-0 pointer-events-none lg:hidden  mt-28">
-      <div className="absolute  opacity-[.03]">
+    <div className="absolute mt-20 inset-0 pointer-events-none lg:hidden h-screen">
+      <div className="border absolute inset-0 opacity-[0.03] h-screen w-screen">
         <img
           className="w-full h-full object-cover"
           src={background}
@@ -41,7 +41,10 @@ export const HamburgerMenu = () => {
           alt="Background"
         />
       </div>
-      <div className="flex flex-col items-center justify-center gap-10">
+      <div
+        className="w-screen flex flex-col justify-center items-center gap-10"
+        style={{ height: "80vh" }}
+      >
         {navigation.map((item) => (
           <a
             key={item.id}
