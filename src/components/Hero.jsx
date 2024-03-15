@@ -20,11 +20,19 @@ function Hero() {
               height={50}
             />
             <img
-              className="lg:hidden "
+              className="lg:hidden md:hidden"
               src={curve}
-              alt=""
+              alt="curve"
               curve
               width={230}
+              height={50}
+            />
+            <img
+              className="hidden lg:hidden md:block"
+              src={curve}
+              alt="curve"
+              curve
+              width={330}
               height={50}
             />
           </h1>
@@ -41,12 +49,11 @@ function Hero() {
       </div>
 
       <div
-        className="relative overflow-hidden flex justify-center items-center z-1 w-[105%] lg:w-[90%] lg:aspect-[1024/490] 
-                      p-1 rounded-2xl bg-gradient-to-r from-blue-300 to-purple-400
-                      "
+        className="relative flex justify-center items-center z-2 w-[105%] 
+        lg:w-[90%] lg:aspect-[1024/490] p-1 rounded-2xl bg-gradient-to-r from-blue-300 to-purple-400"
       >
         <div
-          className="relative z-1 rounded-2xl aspect-[330/400]
+          className="relative z-3 rounded-2xl aspect-[330/400]
                     overflow-hidden md:aspect-[688/490] lg:aspect-[1024/550] w-full"
           id="robotImgContainer"
         >
@@ -60,13 +67,15 @@ function Hero() {
       </div>
 
       <div
-        className="absolute scale-[2] top-[62%] left-[5%] 
+        className="absolute z-0 scale-[2] top-[62%] left-[5%] 
                    md:top-[47%] md:scale-[1.3] md:left-[2%] 
-                   lg:top-[13%] lg:left-[8%] lg:scale-[1.4] overflow-hidden"
-        id="heroBackgroundContainer"
+                   lg:top-[13%] lg:left-[8%] lg:scale-[1.4]"
       >
-        <img id="heroBackgroundImg" src={heroBackground} alt="heroBackground" />
+        <img src={heroBackground} alt="heroBackground" />
       </div>
+      {/* <div className="absolute border-2 border-red-500">
+        <button>AI is generating</button>
+      </div> */}
     </div>
   );
 }
