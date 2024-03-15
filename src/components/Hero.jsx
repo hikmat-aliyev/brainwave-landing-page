@@ -60,8 +60,9 @@ function Hero() {
       </div>
 
       <div
-        className="absolute transform scale-[2] top-[62%] left-[5%] lg:top-[13%] 
-        lg:left-[8%] lg:scale-[1.4] overflow-hidden"
+        className="absolute scale-[2] top-[62%] left-[5%] 
+                   md:top-[47%] md:scale-[1.3] md:left-[2%] 
+                   lg:top-[13%] lg:left-[8%] lg:scale-[1.4] overflow-hidden"
         id="heroBackgroundContainer"
       >
         <img id="heroBackgroundImg" src={heroBackground} alt="heroBackground" />
