@@ -10,9 +10,4 @@
     border-bottom: 25px solid rgba(65, 65, 65, 0.523);
     box-shadow: none;
   }
-
-  #heroBackgroundContainer {
-    width: 200px;
-    border: 1px solid red;
-  }
 }
