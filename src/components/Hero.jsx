@@ -1,6 +1,7 @@
 import { curve, heroBackground, robot } from "../assets";
 import WhiteButton from "./WhiteButton";
 import "../styles/Hero.css";
+import { loading } from "../assets";
 
 function Hero() {
   return (
@@ -63,6 +64,15 @@ function Hero() {
             src={robot}
             alt="robot"
           />
+          <div
+            className="absolute z-4 top-[90%] left-[50%] transform -translate-x-1/2 -translate-y-1/2
+                          bg-black bg-opacity-80 lg:w-[50%] text-start text-lg rounded-3xl p-4"
+          >
+            <button className="flex justify-start items-center gap-4">
+              <img className="w-[12%] h-[90%]" src={loading} alt="loading" /> AI
+              is generating...
+            </button>
+          </div>
         </div>
       </div>
 
@@ -73,9 +83,6 @@ function Hero() {
       >
         <img src={heroBackground} alt="heroBackground" />
       </div>
-      {/* <div className="absolute border-2 border-red-500">
-        <button>AI is generating</button>
-      </div> */}
     </div>
   );
 }
