@@ -5,7 +5,7 @@ import "../styles/Hero.css";
 function Hero() {
   return (
     <div
-      className={`relative overflow-hidden z-1 mt-0 lg:mt-24 p-4 lg:p-10 py-24 flex flex-col gap-28 justify-center items-center border border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm w-full`}
+      className={`relative overflow-hidden lg:overflow-visible z-1 mt-0 lg:mt-24 p-4 lg:p-10 py-24 flex flex-col gap-28 justify-center items-center border border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm w-full`}
     >
       <div className="relative z-1 w-screen lg:w-4/5 flex flex-col items-center justify-center gap-10">
         <h1 className="h1 text-center inline">
