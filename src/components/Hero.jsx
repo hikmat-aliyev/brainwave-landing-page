@@ -2,13 +2,16 @@ import { curve, heroBackground, robot } from "../assets";
 import WhiteButton from "./WhiteButton";
 import "../styles/Hero.css";
 import { loading } from "../assets";
+import { Gradient, BackgroundCircles } from "../design/Hero";
 
 function Hero() {
   return (
     <div
-      className={`relative overflow-hidden lg:overflow-visible z-1 mt-0 lg:mt-24 p-4 lg:p-10 py-24 flex flex-col gap-28 justify-center items-center border border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm w-full`}
+      className={`relative z-10 overflow-hidden lg:overflow-visible mt-0 lg:mt-24 
+                  p-4 lg:p-10 py-24 flex flex-col gap-28 justify-center items-center 
+                  border border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm w-full`}
     >
-      <div className="relative z-1 w-screen lg:w-4/5 flex flex-col items-center justify-center gap-10">
+      <div className="relative z-1 w-screen lg:max-w-[62rem] mx-auto  flex flex-col items-center justify-center gap-10">
         <h1 className="h1 text-center inline">
           Explore the Possibilities of&nbsp;AI&nbsp;Chatting with{" "}
           <h1 className="inline-block">
@@ -39,10 +42,7 @@ function Hero() {
           </h1>
         </h1>
 
-        <h6
-          className="h6 lg:font-medium text-center text-n-3 lg:text-xl text-s font-thin"
-          style={{ width: "70%" }}
-        >
+        <h6 className="h6 lg:font-medium text-center text-n-3 lg:text-xl text-base font-thin w-[88%] lg:w-[70%]">
           Unleash the power of AI within Brainwave. Upgrade your productivity
           &nbsp;with&nbsp; Brainwave, the open AI chat app.
         </h6>
@@ -51,38 +51,49 @@ function Hero() {
 
       <div
         className="relative flex justify-center items-center z-2 w-[105%] 
-        lg:w-[90%] lg:aspect-[1024/490] p-1 rounded-2xl bg-gradient-to-r from-blue-300 to-purple-400"
+        lg:w-[1420px] lg:aspect-[1024/490] p-1 rounded-2xl bg-gradient-to-r from-blue-300 to-purple-400"
       >
         <div
           className="relative z-3 rounded-2xl aspect-[330/400]
-                    overflow-hidden md:aspect-[688/490] lg:aspect-[1024/550] w-full"
+                    overflow-hidden md:aspect-[688/490] lg:aspect-[1024/550] w-full lg:w-fit"
           id="robotImgContainer"
         >
           <img
-            className="rounded-2xl w-full scale-[1.7] translate-y-[0%] md:scale-[1]
+            className="rounded-2xl w-full lg:w-[1410px] scale-[1.7] translate-y-[0%] md:scale-[1]
                          md:-translate-y-[10%] lg:-translate-y-[23%]"
             src={robot}
             alt="robot"
           />
           <div
             className="absolute z-4 top-[90%] left-[50%] transform -translate-x-1/2 -translate-y-1/2
-                          bg-black bg-opacity-80 lg:w-[50%] text-start text-lg rounded-3xl p-4"
+                          bg-black bg-opacity-80 lg:w-[50%] lg:text-lg text-start lg:p-4
+                          text-xs  w-[70%] rounded-3xl p-2"
           >
             <button className="flex justify-start items-center gap-4">
-              <img className="w-[12%] h-[90%]" src={loading} alt="loading" /> AI
-              is generating...
+              <img
+                className="lg:w-[12%] w-[9%] h-[90%]"
+                src={loading}
+                alt="loading"
+              />{" "}
+              AI is generating...
             </button>
           </div>
         </div>
       </div>
 
       <div
-        className="absolute z-0 scale-[2] top-[62%] left-[5%] 
+        className="absolute z-0 scale-[2] top-[58%] left-[5%] 
                    md:top-[47%] md:scale-[1.3] md:left-[2%] 
-                   lg:top-[13%] lg:left-[8%] lg:scale-[1.4]"
+                   lg:top-[14%] lg:left-[9%] lg:scale-[1.4] lg:w-[1410px]"
       >
-        <img src={heroBackground} alt="heroBackground" />
+        <img
+          className="lg:w-[1410px]"
+          src={heroBackground}
+          alt="heroBackground"
+        />
       </div>
+
+      <BackgroundCircles />
     </div>
   );
 }

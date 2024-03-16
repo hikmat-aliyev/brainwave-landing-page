@@ -85,7 +85,11 @@ export default {
   },
   plugins: [
     plugin(function ({ addBase, addComponents, addUtilities }) {
-      addBase({});
+      addBase({
+        html: {
+          "font-size": "22px", // Set your desired base font size here
+        },
+      });
       addComponents({
         ".container": {
           "@apply max-w-[77.5rem] mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[87.5rem]":
