@@ -3,15 +3,15 @@ import WhiteButton from "./WhiteButton";
 import "../styles/Hero.css";
 import { loading } from "../assets";
 import { Gradient, BackgroundCircles } from "../design/Hero";
+import { yourlogo } from "../assets";
 
 function Hero() {
   return (
     <div
       className={`relative z-10 overflow-hidden lg:overflow-visible mt-0 lg:mt-24 
-                  p-4 lg:p-10 py-24 flex flex-col gap-28 justify-center items-center 
-                  border border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm w-full`}
+                  p-4 lg:p-10 py-24 flex flex-col gap-28 justify-center items-center w-full`}
     >
-      <div className="relative z-1 w-screen lg:max-w-[62rem] mx-auto  flex flex-col items-center justify-center gap-10">
+      <div className="relative z-1 w-screen lg:max-w-[62rem] flex flex-col items-center justify-center gap-10">
         <h1 className="h1 text-center inline">
           Explore the Possibilities of&nbsp;AI&nbsp;Chatting with{" "}
           <h1 className="inline-block">
@@ -82,15 +82,28 @@ function Hero() {
       </div>
 
       <div
-        className="absolute z-0 scale-[2] top-[58%] left-[5%] 
-                   md:top-[47%] md:scale-[1.3] md:left-[2%] 
-                   lg:top-[14%] lg:left-[9%] lg:scale-[1.4] lg:w-[1410px]"
+        className="absolute overflow-x-hidden scale-[2] top-[60%] 
+                    md:scale-[1.3] md:top-[44%]
+                    lg:scale-[1.4] lg:top-[12%]"
       >
         <img
           className="lg:w-[1410px]"
           src={heroBackground}
           alt="heroBackground"
         />
+      </div>
+
+      <div className="relative flex flex-col w-full justify-center items-center gap-16">
+        <h6 className="font-code text-gray-400 text-[20px]">
+          HELPING PEOPLE CREATE BEAUTIFUL CONTENT AT
+        </h6>
+        <div className="flex w-full justify-evenly">
+          <img className="w-[140px]" src={yourlogo} alt="yourlogo" />
+          <img className="w-[140px]" src={yourlogo} alt="yourlogo" />
+          <img className="w-[140px]" src={yourlogo} alt="yourlogo" />
+          <img className="w-[140px]" src={yourlogo} alt="yourlogo" />
+          <img className="w-[140px]" src={yourlogo} alt="yourlogo" />
+        </div>
       </div>
 
       <BackgroundCircles />
