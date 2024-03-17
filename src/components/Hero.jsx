@@ -4,14 +4,20 @@ import "../styles/Hero.css";
 import { loading } from "../assets";
 import { Gradient, BackgroundCircles } from "../design/Hero";
 import { yourlogo } from "../assets";
+import { heroIcons } from "../constants/constants";
+import { ScrollParallax } from "react-just-parallax";
+import { useRef } from "react";
 
 function Hero() {
+  const parallaxRef = useRef(null);
+
   return (
     <div
+      ref={parallaxRef}
       className={`relative z-2 overflow-hidden lg:overflow-visible mt-0 lg:mt-24 
                   p-4 lg:p-10 py-24 flex flex-col gap-28 justify-center items-center w-full`}
     >
-      <div className="relative z-1 w-screen lg:max-w-[62rem] flex flex-col items-center justify-center gap-10">
+      <div className="relative z-1 w-screen md:w-[100%] lg:max-w-[62rem] flex flex-col items-center justify-center gap-10">
         <h1 className="h1 text-center inline">
           Explore the Possibilities of&nbsp;AI&nbsp;Chatting with{" "}
           <h1 className="inline-block">
@@ -79,11 +85,28 @@ function Hero() {
             </button>
           </div>
         </div>
+        <div className="absolute top-80 z-5 -left-20 flex items-center w-[350px]">
+          <ScrollParallax isAbsolutelyPositioned>
+            <ul
+              className="h-full w-full flex items-center justify-between 
+                        bg-n-8/90 opacity-[0.9] p-8 rounded-2xl"
+              style={{
+                boxShadow: "0 0 4px rgba(255, 255, 255, 0.1)",
+              }}
+            >
+              {heroIcons.map((icon, index) => (
+                <li className=" flex justify-center items-center" key={index}>
+                  <img className="" src={icon} alt="" />
+                </li>
+              ))}
+            </ul>
+          </ScrollParallax>
+        </div>
       </div>
 
       <div
         className="absolute overflow-x-hidden scale-[2] top-[50%] 
-                    md:scale-[1.3] md:top-[38%]
+                    md:scale-[1.3] md:top-[42%]
                     lg:scale-[1.4] lg:top-[12%]"
       >
         <img
