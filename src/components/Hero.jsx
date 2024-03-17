@@ -7,6 +7,7 @@ import { yourlogo } from "../assets";
 import { heroIcons } from "../constants/constants";
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
+import Notification from "./Notification";
 
 function Hero() {
   const parallaxRef = useRef(null);
@@ -77,6 +78,7 @@ function Hero() {
           >
             <button className="flex justify-start items-center gap-4">
               <img
+                id="loadingImg"
                 className="lg:w-[12%] w-[9%] h-[90%]"
                 src={loading}
                 alt="loading"
@@ -85,14 +87,13 @@ function Hero() {
             </button>
           </div>
         </div>
+
         <div className="absolute top-80 z-5 -left-20 flex items-center w-[350px]">
           <ScrollParallax isAbsolutelyPositioned>
             <ul
               className="h-full w-full flex items-center justify-between 
-                        bg-n-8/90 opacity-[0.9] p-8 rounded-2xl"
-              style={{
-                boxShadow: "0 0 4px rgba(255, 255, 255, 0.1)",
-              }}
+                        bg-n-9/40 backdrop-blur opacity-1 p-8 rounded-2xl
+                        border border-gray-700"
             >
               {heroIcons.map((icon, index) => (
                 <li className=" flex justify-center items-center" key={index}>
@@ -100,6 +101,12 @@ function Hero() {
                 </li>
               ))}
             </ul>
+          </ScrollParallax>
+        </div>
+
+        <div className="absolute top-60 z-5 -right-20 flex items-center w-[400px]">
+          <ScrollParallax isAbsolutelyPositioned>
+            <Notification />
           </ScrollParallax>
         </div>
       </div>
