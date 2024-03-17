@@ -8,7 +8,7 @@ import { yourlogo } from "../assets";
 function Hero() {
   return (
     <div
-      className={`relative z-10 overflow-hidden lg:overflow-visible mt-0 lg:mt-24 
+      className={`relative z-2 overflow-hidden lg:overflow-visible mt-0 lg:mt-24 
                   p-4 lg:p-10 py-24 flex flex-col gap-28 justify-center items-center w-full`}
     >
       <div className="relative z-1 w-screen lg:max-w-[62rem] flex flex-col items-center justify-center gap-10">
@@ -82,8 +82,8 @@ function Hero() {
       </div>
 
       <div
-        className="absolute overflow-x-hidden scale-[2] top-[60%] 
-                    md:scale-[1.3] md:top-[44%]
+        className="absolute overflow-x-hidden scale-[2] top-[50%] 
+                    md:scale-[1.3] md:top-[38%]
                     lg:scale-[1.4] lg:top-[12%]"
       >
         <img
@@ -93,16 +93,36 @@ function Hero() {
         />
       </div>
 
-      <div className="relative flex flex-col w-full justify-center items-center gap-16">
-        <h6 className="font-code text-gray-400 text-[20px]">
+      <div className="relative z-20 flex flex-col w-full justify-center items-center gap-8 lg:gap-16">
+        <h6 className="font-code text-gray-400 text-[10px] lg:text-[20px]">
           HELPING PEOPLE CREATE BEAUTIFUL CONTENT AT
         </h6>
         <div className="flex w-full justify-evenly">
-          <img className="w-[140px]" src={yourlogo} alt="yourlogo" />
-          <img className="w-[140px]" src={yourlogo} alt="yourlogo" />
-          <img className="w-[140px]" src={yourlogo} alt="yourlogo" />
-          <img className="w-[140px]" src={yourlogo} alt="yourlogo" />
-          <img className="w-[140px]" src={yourlogo} alt="yourlogo" />
+          <img
+            className="w-[80px] lg:w-[140px]"
+            src={yourlogo}
+            alt="yourlogo"
+          />
+          <img
+            className="w-[80px] lg:w-[140px]"
+            src={yourlogo}
+            alt="yourlogo"
+          />
+          <img
+            className="w-[80px] lg:w-[140px]"
+            src={yourlogo}
+            alt="yourlogo"
+          />
+          <img
+            className="hidden lg:block lg:w-[140px]"
+            src={yourlogo}
+            alt="yourlogo"
+          />
+          <img
+            className="hidden lg:block lg:w-[140px]"
+            src={yourlogo}
+            alt="yourlogo"
+          />
         </div>
       </div>
 
