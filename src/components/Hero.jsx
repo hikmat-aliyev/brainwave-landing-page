@@ -88,7 +88,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className="absolute top-80 z-5 -left-20 flex items-center w-[350px]">
+        <div className="hidden absolute top-80 z-5 -left-20 lg:flex items-center w-[350px]">
           <ScrollParallax isAbsolutelyPositioned>
             <ul
               className="h-full w-full flex items-center justify-between 
@@ -104,7 +104,7 @@ function Hero() {
           </ScrollParallax>
         </div>
 
-        <div className="absolute top-60 z-5 -right-20 flex items-center w-[400px]">
+        <div className="hidden absolute top-60 z-5 -right-20 lg:flex items-center w-[400px]">
           <ScrollParallax isAbsolutelyPositioned>
             <Notification />
           </ScrollParallax>
