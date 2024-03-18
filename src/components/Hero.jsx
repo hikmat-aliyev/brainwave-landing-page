@@ -2,12 +2,13 @@ import { curve, heroBackground, robot } from "../assets";
 import WhiteButton from "./WhiteButton";
 import "../styles/Hero.css";
 import { loading } from "../assets";
-import { Gradient, BackgroundCircles } from "../design/Hero";
+import { BackgroundCircles } from "../design/Hero";
 import { yourlogo } from "../assets";
 import { heroIcons } from "../constants/constants";
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 import Notification from "./Notification";
+import GeneratingBtn from "./GeneratingBtn";
 
 function Hero() {
   const parallaxRef = useRef(null);
@@ -71,21 +72,7 @@ function Hero() {
             src={robot}
             alt="robot"
           />
-          <div
-            className="absolute z-4 top-[90%] left-[50%] transform -translate-x-1/2 -translate-y-1/2
-                          bg-black bg-opacity-80 lg:w-[50%] lg:text-lg text-start lg:p-4
-                          text-xs  w-[70%] rounded-3xl p-2"
-          >
-            <button className="flex justify-start items-center gap-4">
-              <img
-                id="loadingImg"
-                className="lg:w-[12%] w-[9%] h-[90%]"
-                src={loading}
-                alt="loading"
-              />{" "}
-              AI is generating...
-            </button>
-          </div>
+          <GeneratingBtn />
         </div>
 
         <div className="hidden absolute top-80 z-5 -left-20 lg:flex items-center w-[350px]">

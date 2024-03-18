@@ -127,53 +127,34 @@ export const roadmap = [
   },
 ];
 
-export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
-
-export const collabContent = [
-  {
-    id: "0",
-    title: "Seamless Integration",
-    text: collabText,
-  },
-  {
-    id: "1",
-    title: "Smart Automation",
-  },
-  {
-    id: "2",
-    title: "Top-notch Security",
-  },
-];
-
 export const collabApps = [
   {
     id: "0",
     title: "Figma",
     icon: figma,
-    width: 26,
-    height: 36,
+    width: 34,
+    height: 34,
   },
   {
     id: "1",
     title: "Notion",
     icon: notion,
     width: 34,
-    height: 36,
+    height: 34,
   },
   {
     id: "2",
     title: "Discord",
     icon: discord,
-    width: 36,
-    height: 28,
+    width: 34,
+    height: 34,
   },
   {
     id: "3",
     title: "Slack",
     icon: slack,
     width: 34,
-    height: 35,
+    height: 34,
   },
   {
     id: "4",
@@ -193,15 +174,15 @@ export const collabApps = [
     id: "6",
     title: "Framer",
     icon: framer,
-    width: 26,
+    width: 34,
     height: 34,
   },
   {
     id: "7",
     title: "Raindrop",
     icon: raindrop,
-    width: 38,
-    height: 32,
+    width: 34,
+    height: 34,
   },
 ];
 
