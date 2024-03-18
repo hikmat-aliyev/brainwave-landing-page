@@ -6,6 +6,31 @@
   /* Ensures the image covers the entire container */
   background-size: cover;
   background-position: center;
+  overflow: hidden;
+}
+
+#secondServiceContainer {
+  background-image: url('../assets/services/service-2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 1200px;
+  width: 46vw;
+  overflow: hidden;
+}
+
+#thirdServiceContainer {
+  width: 46vw;
+  height: 1200px;
+  overflow: hidden;
+}
+
+#thirdServiceBg {
+  background-image: url('../assets/services/service-3.png');
+  background-repeat: no-repeat;
+  /* Ensures the image covers the entire container */
+  background-size: cover;
+  background-position: center;
 }
 
 @media (max-width: 821px) {
@@ -23,6 +48,20 @@
     /* Ensures the image covers the entire container */
     background-size: cover;
     background-position: center;
+  }
+
+  #secondServiceContainer {
+    width: 90vw;
+    height: 1000px;
+  }
+
+  #thirdServiceContainer {
+    width: 90vw;
+    height: fit-content;
+  }
+
+  #thirdServiceBg {
+    height: 400px;
   }
 
 }

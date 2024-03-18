@@ -6,7 +6,7 @@ import Services from "./components/Services";
 
 function App() {
   return (
-    <div className="flex flex-col p-2 lg:p-10 md:p-8">
+    <div className="flex flex-col p-2 lg:p-10 md:p-8 overflow-hidden">
       <Navbar />
       <Hero />
       <Benefits />

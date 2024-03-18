@@ -6,7 +6,7 @@ function FirstService() {
   return (
     <div
       id="firstServiceContainer"
-      className="flex justify-center items-center border border-gray-700 rounded-3xl py-20 lg:p-0"
+      className="relative flex justify-center items-center border border-gray-700 rounded-3xl py-20 lg:p-0"
     >
       <div id="firstServiceBackground" />
       <div className="flex flex-col gap-8 w-full lg:w-[30%] p-10">
