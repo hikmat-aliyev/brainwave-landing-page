@@ -1,0 +1,28 @@
+#firstServiceBackground {
+  background-image: url('../assets/services/service-1.png');
+  height: 1200px;
+  width: 70vw;
+  background-repeat: no-repeat;
+  /* Ensures the image covers the entire container */
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 821px) {
+
+  /* Make display of image background div none */
+  #firstServiceBackground {
+    display: none;
+  }
+
+  /* set background img directly to main container */
+  #firstServiceContainer {
+    width: 90vw;
+    background-image: url('../assets/services/service-1.png');
+    background-repeat: no-repeat;
+    /* Ensures the image covers the entire container */
+    background-size: cover;
+    background-position: center;
+  }
+
+}
