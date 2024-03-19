@@ -21,7 +21,7 @@ function SinglePrice({
 
       <div className="flex items-center justify-start">
         <p className="text-[2rem]">$</p>
-        <h1 className="h1 text-[5rem]">{price}</h1>
+        <h1 className="h1 text-[3.5rem] lg:text-[5rem]">{price}</h1>
       </div>
 
       {button}

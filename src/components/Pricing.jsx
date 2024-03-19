@@ -16,6 +16,8 @@ function Pricing() {
       </div>
 
       <PriceOffers />
+
+      <button className="underline tracking-wide">See full details</button>
     </div>
   );
 }

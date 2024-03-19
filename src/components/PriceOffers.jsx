@@ -3,7 +3,7 @@ import WhiteButton from "./WhiteButton";
 
 function PriceOffers() {
   return (
-    <div className="flex gap-4">
+    <div className="flex flex-col lg:flex-row w-[90vw] gap-4">
       <SinglePrice
         priceName={"Basic"}
         priceColor={"text-yellow-200"}
