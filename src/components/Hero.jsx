@@ -15,6 +15,7 @@ function Hero() {
 
   return (
     <div
+      id="hero"
       ref={parallaxRef}
       className={`relative z-2 overflow-hidden lg:overflow-visible mt-0 lg:mt-24 
                   p-4 lg:p-10 py-24 flex flex-col gap-28 justify-center items-center w-full`}

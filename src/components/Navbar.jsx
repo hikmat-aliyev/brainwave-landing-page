@@ -15,7 +15,9 @@ function Navbar() {
       } flex justify-between items-center lg:px-10 px-4 h-20`}
     >
       <div>
-        <img src={brainwave} alt="brain-wave-logo" width={190} />
+        <a href="#hero">
+          <img src={brainwave} alt="brain-wave-logo" width={190} />
+        </a>
       </div>
 
       <div className="flex">
@@ -44,8 +46,10 @@ function Navbar() {
       </div>
 
       <div
-        className="lg:hidden"
-        onClick={() => setOpenNavigation(!openNavigation)}
+        className="lg:hidden relative z-50"
+        onClick={() => {
+          setOpenNavigation(!openNavigation);
+        }}
       >
         <Button
           href="#hey"
@@ -56,9 +60,7 @@ function Navbar() {
         </Button>
       </div>
 
-      {openNavigation && (
-        <HamburgerMenu setOpenNavigation={setOpenNavigation} />
-      )}
+      {openNavigation && <HamburgerMenu />}
     </div>
   );
 }
