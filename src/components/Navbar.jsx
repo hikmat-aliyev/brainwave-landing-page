@@ -60,7 +60,9 @@ function Navbar() {
         </Button>
       </div>
 
-      {openNavigation && <HamburgerMenu />}
+      {openNavigation && (
+        <HamburgerMenu setOpenNavigation={setOpenNavigation} />
+      )}
     </div>
   );
 }

@@ -29,9 +29,9 @@ export const BackgroundCircles = () => {
   );
 };
 
-export const HamburgerMenu = () => {
+export const HamburgerMenu = ({ setOpenNavigation }) => {
   return (
-    <div className="absolute z-40 mt-20 inset-0 lg:hidden h-screen bg-n-8">
+    <div className="absolute z-20 mt-20 inset-0 lg:hidden h-screen bg-n-8">
       <div className="border absolute inset-0 opacity-[0.03] h-screen w-screen">
         <img
           className="w-full h-full object-cover"
@@ -42,12 +42,12 @@ export const HamburgerMenu = () => {
         />
       </div>
       <div
-        className="absolute z-50 w-screen flex flex-col justify-center items-center gap-10"
+        className="absolute z-30 w-screen flex flex-col justify-center items-center gap-10"
         style={{ height: "80vh" }}
       >
         {navigation.map((item) => (
           <a
-            onClick={() => console.log("dasdsa")}
+            onClick={() => setOpenNavigation(false)}
             key={item.id}
             href={item.url}
             className={`font-code lg:text-xs uppercase text-n-3
