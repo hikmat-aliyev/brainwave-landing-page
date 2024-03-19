@@ -16,8 +16,9 @@ function Notification() {
         <h6 className="font-bold">Code generation</h6>
         <div className="flex justify-between">
           <div>
-            {notificationImages.map((item) => (
+            {notificationImages.map((item, index) => (
               <img
+                key={index}
                 className="w-[30px] inline rounded-full mr-1"
                 src={item}
                 alt={item}

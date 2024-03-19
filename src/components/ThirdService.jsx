@@ -18,7 +18,10 @@ function ThirdService() {
 
         <div className="flex justify-around w-full py-10">
           {brainwaveServicesIcons.map((item, index) => (
-            <div className="border border-gray-700 rounded-2xl p-2 lg:p-6 bg-n-6">
+            <div
+              key={index}
+              className="border border-gray-700 rounded-2xl p-2 lg:p-6 bg-n-6"
+            >
               <img src={item} alt="icon" width={25} />
             </div>
           ))}

@@ -62,11 +62,11 @@ function Collaboration() {
       <div className="relative border border-n-9/100 w-[260px] h-[260px] lg:w-[500px] lg:h-[500px] rounded-full">
         {collabApps.map((item, index) => (
           <div
+            key={index}
             className={`absolute top-0 w-full h-full rounded-full
             rotate-${index * 45}`}
           >
             <div
-              key={index}
               className={`absolute border w-[42px] h-[42px] lg:w-[65px] lg:h-[65px] py-2 px-2 left-[47%]
                     rounded-lg border-n-9/100 bg-n-8 flex justify-center items-center
                     -rotate-${index * 45} -m-3`}

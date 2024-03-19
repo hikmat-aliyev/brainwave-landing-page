@@ -8,7 +8,7 @@ function Pricing() {
         <img className="absolute w-[12rem]" src={smallSphere} alt="sphere" />
         <img className="scale-[1.3]" src={stars} alt="" />
       </div>
-      <div className="flex flex-col items-center justify-center">
+      <div id="pricing" className="flex flex-col items-center justify-center">
         <p className="font-code text-gray-400">
           [ GET STARTED WITH BRAINWAVE ]
         </p>

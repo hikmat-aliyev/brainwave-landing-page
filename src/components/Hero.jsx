@@ -20,7 +20,7 @@ function Hero() {
                   p-4 lg:p-10 py-24 flex flex-col gap-28 justify-center items-center w-full`}
     >
       <div className="relative z-1 w-screen md:w-[100%] lg:max-w-[62rem] flex flex-col items-center justify-center gap-10">
-        <h1 className="h1 text-center inline">
+        <div className="h1 text-center inline">
           Explore the Possibilities of&nbsp;AI&nbsp;Chatting with{" "}
           <h1 className="inline-block">
             Brainwave{" "}
@@ -35,7 +35,6 @@ function Hero() {
               className="lg:hidden md:hidden"
               src={curve}
               alt="curve"
-              curve
               width={230}
               height={50}
             />
@@ -43,12 +42,11 @@ function Hero() {
               className="hidden lg:hidden md:block"
               src={curve}
               alt="curve"
-              curve
               width={330}
               height={50}
             />
           </h1>
-        </h1>
+        </div>
 
         <h6 className="h6 lg:font-medium text-center text-n-3 lg:text-xl text-base font-thin w-[88%] lg:w-[70%]">
           Unleash the power of AI within Brainwave. Upgrade your productivity

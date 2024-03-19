@@ -9,7 +9,10 @@ function RoadMap() {
   const defaultBorder = "border border-gray-700 rounded-[20px]";
 
   return (
-    <div className="relative flex flex-col items-center justify-center mt-60">
+    <div
+      id="roadmap"
+      className="relative flex flex-col items-center justify-center mt-60"
+    >
       <div className="flex flex-col w-full justify-center items-center">
         <p className="text-[0.4rem] lg:text-[0.7rem] text-gray-400 tracking-widest">
           [ READY TO GET STARTED ]

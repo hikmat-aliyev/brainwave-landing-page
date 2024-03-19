@@ -2,13 +2,16 @@ import { benefits } from "../constants/constants";
 
 function Benefits() {
   return (
-    <div className="flex flex-col justify-center items-center mt-0 lg:mt-20 relative z-3">
+    <div
+      id="features"
+      className="flex flex-col justify-center items-center mt-0 lg:mt-20 relative z-3"
+    >
       <h2 className="h3 font-semibold w-[90%] lg:w-[60%] text-center">
         Chat Smarter, Not Harder with Brainwave
       </h2>
       <div className="w-full flex flex-wrap justify-start lg:p-10 gap-10">
-        {benefits.map((item) => (
-          <div className="md:w-[60%] lg:w-[40%]">
+        {benefits.map((item, index) => (
+          <div key={index} className="md:w-[60%] lg:w-[40%]">
             <div
               className="relative md:h-[420px] lg:w-[500px] lg:h-[450px] py-8 px-4 lg:p-10 
                          flex flex-col justify-between gap-4 lg:gap-0"
