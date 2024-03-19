@@ -11,14 +11,14 @@ function RoadMap() {
   return (
     <div className="relative flex flex-col items-center justify-center mt-60">
       <div className="flex flex-col w-full justify-center items-center">
-        <p className="text-[0.7rem] text-gray-400 tracking-widest">
+        <p className="text-[0.4rem] lg:text-[0.7rem] text-gray-400 tracking-widest">
           [ READY TO GET STARTED ]
         </p>
-        <h1 className="h2">What we’re working on</h1>
+        <h1 className="h2 text-center">What we’re working on</h1>
       </div>
 
-      <div className="flex items-center justify-center gap-4">
-        <div className="w-[42vw] flex flex-col gap-4">
+      <div className="flex flex-col md:flex-row lg:flex-row items-center justify-center gap-4">
+        <div className="w-[90vw] md:w-[42vw] lg:w-[42vw] flex flex-col gap-4">
           <SingleRoadMap
             status={"DONE"}
             statusImg={check2}
@@ -41,7 +41,7 @@ function RoadMap() {
             containerBorder={defaultBorder}
           />
         </div>
-        <div className="w-[42vw] mt-60 flex flex-col gap-4">
+        <div className="w-[90vw] md:w-[42vw] lg:w-[42vw] md:mt-60 lg:mt-60 flex flex-col gap-4">
           <SingleRoadMap
             status={"IN PROGRESS"}
             statusImg={loading1}
