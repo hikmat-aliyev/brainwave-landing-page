@@ -4,6 +4,7 @@ import Benefits from "./components/Benefits";
 import Collaboration from "./components/Collaboration";
 import Services from "./components/Services";
 import Pricing from "./components/Pricing";
+import RoadMap from "./components/RoadMap";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Collaboration />
       <Services />
       <Pricing />
+      <RoadMap />
     </div>
   );
 }
