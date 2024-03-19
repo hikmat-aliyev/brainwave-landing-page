@@ -3,12 +3,13 @@ import { check2, grid, loading1 } from "../assets";
 import { Gradient } from "../design/Roadmap";
 import SingleRoadMap from "./SingleRoadMap";
 import { roadmap1, roadmap2, roadmap3, roadmap4 } from "../assets";
+import Button from "./Button";
 
 function RoadMap() {
   const defaultBorder = "border border-gray-700 rounded-[20px]";
 
   return (
-    <div className="relative flex flex-col mt-60 gap-0">
+    <div className="relative flex flex-col items-center justify-center mt-60">
       <div className="flex flex-col w-full justify-center items-center">
         <p className="text-[0.7rem] text-gray-400 tracking-widest">
           [ READY TO GET STARTED ]
@@ -27,6 +28,7 @@ function RoadMap() {
               "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free."
             }
             containerBorder={defaultBorder}
+            gradientBorder={"gradientBorder"}
           />
           <SingleRoadMap
             status={"DONE"}
@@ -62,6 +64,8 @@ function RoadMap() {
           />
         </div>
       </div>
+
+      <Button children={"OUR ROADMAP"} className="w-fit border mt-[90px]" />
 
       <Gradient />
     </div>

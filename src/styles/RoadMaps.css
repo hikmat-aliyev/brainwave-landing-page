@@ -2,9 +2,3 @@
   background-image: url('../assets/grid.png');
   background-repeat: no-repeat;
 }
-
-.gradientBorder {
-  border: 5px solid hotpink;
-  border-image: linear-gradient(90deg, white, black, yellow);
-  border-image-slice: 1;
-}

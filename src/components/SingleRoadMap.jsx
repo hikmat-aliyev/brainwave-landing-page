@@ -7,11 +7,12 @@ function SingleRoadMap({
   roadmapName,
   roadmapDescription,
   containerBorder,
+  gradientBorder,
 }) {
   return (
     <div
       id="singleRoadMapContainer"
-      className={`w-full flex flex-col rounded-[40px] ${containerBorder} singleRoadMapContainer`}
+      className={`w-full flex flex-col rounded-[40px] ${containerBorder} ${gradientBorder}`}
     >
       <div className="flex justify-between w-full px-16 py-15">
         <p className="text-gray-400 text-[0.7rem] tracking-widest font-thin">

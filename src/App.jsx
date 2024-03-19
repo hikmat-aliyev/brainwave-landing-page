@@ -5,6 +5,7 @@ import Collaboration from "./components/Collaboration";
 import Services from "./components/Services";
 import Pricing from "./components/Pricing";
 import RoadMap from "./components/RoadMap";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Services />
       <Pricing />
       <RoadMap />
+      <Footer />
     </div>
   );
 }
